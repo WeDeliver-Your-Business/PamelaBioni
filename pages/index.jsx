@@ -1,5 +1,9 @@
+import styled from 'styled-components'
+
+import Navbar from '../src/navbar/Navbar'
+
 function MainPage() {
-  return <div>Hello World</div>
+  return <Navbar />
 }
 
 export default MainPage
