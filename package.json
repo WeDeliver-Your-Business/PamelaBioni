@@ -1,0 +1,34 @@
+{
+  "name": "pamelabioni",
+  "version": "1.0.0",
+  "description": "Site_Pamela Bioni_Mastologia",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "axios": "^0.26.0",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.38.0",
+    "react-icons": "^4.6.0",
+    "styled-components": "^5.3.5",
+    "swr": "^1.2.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0"
+  }
+}
