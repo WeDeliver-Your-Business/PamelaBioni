@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 
 import styled from 'styled-components'
 
-import IconImage from '../iconImage/IconImage'
+import IconImage from '../../utils/iconImage/IconImage'
 
 const StyledLogo = styled.div`
   width: 308px;
