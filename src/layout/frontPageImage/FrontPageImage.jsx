@@ -29,12 +29,12 @@ const StyledContainer = styled.div`
 
 function FrontPageImage({ children, image }) {
   return (
-    <div>
+    <>
       <StyledFlex>
         <StyledImage image={image} />
         <StyledContainer>{children}</StyledContainer>
       </StyledFlex>
-    </div>
+    </>
   )
 }
 
