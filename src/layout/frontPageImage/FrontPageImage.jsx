@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import InfoPage from '../infoPage/InfoPage'
+import InfoPage from './InfoPage'
 
 const StyledFlex = styled.div`
   position: relative;
