@@ -26,6 +26,10 @@ const TextBody = styled.div`
   h5 {
     padding: 25px 27px 5px 30px;
   }
+
+  img {
+    padding-left: 25px;
+  }
 `
 const KnowMoreContainer = styled.div`
   text-align: center;
@@ -42,7 +46,7 @@ const KnowMore = styled.a`
   :after {
     content: '';
     position: absolute;
-    background-color: ${(props) => props.theme.ColorWhite};
+    background-color: ${(props) => props.theme.secondary};
     height: 2px;
     width: 0;
     left: 0;

@@ -1,7 +1,8 @@
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
+
 import styled from 'styled-components'
 
 import H4 from '../../typograph/H4'
-import H5 from '../../typograph/H5'
 
 import IconImage from '../../utils/iconImage/IconImage'
 
@@ -34,7 +35,33 @@ const ImageContainer = styled.div`
   margin: 20px 0 20px 0;
 `
 
+const AnimatedText = styled.span`
+  margin: auto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+`
+const StyledCursorSpan = styled.span`
+  font-family: 'Sans-serif', cursive;
+  color: ${(props) => props.theme.primary};
+  font-weight: bold;
+  font-size: 20px;
+`
+
 function TopicsAreas() {
+  const [text] = useTypewriter({
+    words: [
+      'Doença benigna da mama / Cistos mamários / Nódulos mamários / Fibroadenoma',
+      'Reconstrução mamária',
+      'Síndrome de predisposição hereditária ao câncer de mama / Mutação genética / Alto risco familiar',
+      'Ginecomastia',
+      'Mastite'
+    ],
+    loop: 0,
+    typeSpeed: 70,
+    delaySpeed: 2000,
+    deleteSpeed: 20
+  })
   return (
     <>
       <ColouredContainer>
@@ -44,7 +71,10 @@ function TopicsAreas() {
             <ImageContainer>
               <IconImage imageName="TopicsAreas_image" type="png" size="75" />
             </ImageContainer>
-            <H5>Câncer de mama</H5>
+            <AnimatedText>{text}</AnimatedText>
+            <StyledCursorSpan>
+              <Cursor cursorBlinking="false" />
+            </StyledCursorSpan>
           </MainContainer>
         </Container>
       </ColouredContainer>
