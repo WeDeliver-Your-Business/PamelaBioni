@@ -12,17 +12,17 @@ const Container = styled.div``
 
 const MainContainer = styled.div`
   color: ${(props) => props.theme.primary};
-  margin-top: 100px;
+  margin-top: -90px;
   margin-right: 80px;
   margin-left: 80px;
   margin-bottom: 100px;
   display: flex;
   border-radius: 20px 100px 20px 100px;
+  padding-top: 100px;
 `
 
 const TextContainer = styled.div`
   width: 1100px;
-  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;

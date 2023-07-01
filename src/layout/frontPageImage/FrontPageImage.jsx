@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
+import InfoPage from '../infoPage/InfoPage'
+
 const StyledFlex = styled.div`
-  display: flex;
+  position: relative;
+  z-index: -1;
 `
 const StyledImage = styled.div`
   background-image: url('${(props) => props.image}');
@@ -9,7 +12,7 @@ const StyledImage = styled.div`
   background-size: cover;
 
   width: 100%;
-  height: 90vh;
+  height: 120vh;
 `
 const StyledContainer = styled.div`
   background-color: ${(props) => props.theme.white};
@@ -27,6 +30,11 @@ const StyledContainer = styled.div`
   }
 `
 
+const InfoContainer = styled.div`
+  background-color: white;
+  border-radius: 20px 100px 20px 100px;
+`
+
 function FrontPageImage({ children, image }) {
   return (
     <>
@@ -34,6 +42,9 @@ function FrontPageImage({ children, image }) {
         <StyledImage image={image} />
         <StyledContainer>{children}</StyledContainer>
       </StyledFlex>
+      <InfoContainer>
+        <InfoPage />
+      </InfoContainer>
     </>
   )
 }

@@ -2,14 +2,14 @@
 
 import Navbar from '../src/layout/navbar/Navbar'
 import FrontPageImage from '../src/layout/frontPageImage/FrontPageImage'
-import InfoPage from '../src/layout/infoPage/InfoPage'
+import ProfessionalProfile from '../src/layout/professionalProfile/ProfessionalProfile'
 
 function MainPage() {
   return (
     <>
       <Navbar />
       <FrontPageImage />
-      <InfoPage />
+      <ProfessionalProfile />
     </>
   )
 }
