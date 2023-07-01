@@ -51,15 +51,20 @@ const StyledCursorSpan = styled.span`
 function TopicsAreas() {
   const [text] = useTypewriter({
     words: [
-      'Doença benigna da mama / Cistos mamários / Nódulos mamários / Fibroadenoma',
+      'Doença benigna da mama',
+      'Cistos mamários',
+      'Nódulos mamários',
+      'Fibroadenoma',
       'Reconstrução mamária',
-      'Síndrome de predisposição hereditária ao câncer de mama / Mutação genética / Alto risco familiar',
+      'Síndrome de predisposição hereditária ao câncer de mama',
+      'Mutação genética',
+      'Alto risco familiar',
       'Ginecomastia',
       'Mastite'
     ],
     loop: 0,
     typeSpeed: 70,
-    delaySpeed: 2000,
+    delaySpeed: 1000,
     deleteSpeed: 20
   })
   return (
