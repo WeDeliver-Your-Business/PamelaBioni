@@ -6,7 +6,7 @@ import RightNavbar from './RightNavBar'
 
 const StyledBurger = styled.div`
   width: 3rem;
-  height: 2rem;
+  height: 2.5rem;
   position: fixed;
   top: 20px;
   right: 5px;
@@ -23,16 +23,16 @@ const StyledBurger = styled.div`
   }
 
   div {
-    width: 2rem;
+    width: 2.1rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? '#FFFFFF' : '#FFFFFF')};
-    border: 4px;
-    transform-origin: -10.5px;
+    border: 3px;
+    transform-origin: -12.5px;
     transition: all 0.3s linear;
     cursor: pointer;
 
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? 'rotate(23deg)' : 'rotate(0deg)')};
+      transform: ${({ open }) => (open ? 'rotate(27deg)' : 'rotate(0deg)')};
     }
 
     &:nth-child(2) {
@@ -41,7 +41,7 @@ const StyledBurger = styled.div`
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? 'rotate(-24deg)' : 'rotate(0deg)')};
+      transform: ${({ open }) => (open ? 'rotate(-26deg)' : 'rotate(0deg)')};
     }
   }
 `
