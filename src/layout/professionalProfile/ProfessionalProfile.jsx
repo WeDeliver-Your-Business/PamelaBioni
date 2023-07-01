@@ -27,6 +27,33 @@ const TextBody = styled.div`
     padding: 25px 27px 5px 30px;
   }
 `
+const KnowMoreContainer = styled.div`
+  text-align: center;
+  padding: 40px 0 80px 0;
+`
+const KnowMore = styled.a`
+  cursor: pointer;
+  font-size: 36px;
+  line-height: 77px;
+  font-weight: bold;
+  transition: all 0.3s;
+  position: relative;
+
+  :after {
+    content: '';
+    position: absolute;
+    background-color: ${(props) => props.theme.ColorWhite};
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  :hover:after {
+    width: 100%;
+  }
+`
 
 export default function ProfessionalProfile() {
   return (
@@ -69,6 +96,9 @@ export default function ProfessionalProfile() {
               Mastologia
             </H5>
           </TextBody>
+          <KnowMoreContainer>
+            <KnowMore>Saiba mais</KnowMore>
+          </KnowMoreContainer>
         </MainTextContainer>
       </Container>
     </>
