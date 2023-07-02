@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-import { AiFillHeart, AiOutlinePlusCircle, AiOutlineHeart } from 'react-icons/ai'
+import { AiFillHeart, AiOutlinePlusCircle } from 'react-icons/ai'
+import { PiWhatsappLogoThin } from 'react-icons/pi'
 
 import H4 from '../../typograph/H4'
 import H5 from '../../typograph/H5'
@@ -14,19 +15,18 @@ const ColouredContainer = styled.div`
 `
 
 const MainContainer = styled.div`
+  padding-top: 80px;
   position: relative;
   z-index: 10;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: ${(props) => props.theme.primary};
   border-radius: 0px 100px 20px 100px;
-  //Retirar esse height mais a frente
-  height: 1000px;
 `
 const Container = styled.div`
-  padding-top: 100px;
   padding-bottom: 100px;
   justify-content: center;
   align-items: center;
@@ -77,6 +77,54 @@ const CardIcon = styled.div`
   gap: 20px;
   margin-top: 50px;
 `
+const CardHelpContainer = styled.div`
+  margin-top: 250px;
+  padding-top: 50px;
+  margin-bottom: 300px;
+  background-color: ${(props) => props.theme.ColorWhite};
+  width: 790px;
+  height: 335px;
+  border-radius: 20px 100px 20px 100px;
+`
+const TextCardHelp = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const ImageCardHelp = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+`
+const StyledImageCard = styled.div`
+  cursor: pointer;
+`
+const EmailLinkContainer = styled.div`
+  text-align: center;
+
+  a {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    transition: all 0.3s;
+    position: relative;
+
+    :after {
+      content: '';
+      position: absolute;
+      background-color: ${(props) => props.theme.secondary};
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+      transition: 0.3s;
+    }
+
+    :hover:after {
+      width: 100%;
+    }
+  }
+`
 
 function CarePage() {
   return (
@@ -102,7 +150,7 @@ function CarePage() {
                 <IconImage imageName="Care2" type="png" />
                 <WhiteBackground>
                   <CardTitle>
-                    <H5>Quando procurar uma mastologista?</H5>
+                    <H5>Qual a diferença entre nódulo e cisto mamário?</H5>
                   </CardTitle>
                   <CardIcon>
                     <AiFillHeart size="35px" />
@@ -114,7 +162,7 @@ function CarePage() {
                 <IconImage imageName="Care3" type="png" />
                 <WhiteBackground>
                   <CardTitle>
-                    <H5>Quando procurar uma mastologista?</H5>
+                    <H5>Quando devo fazer exames de mama?</H5>
                   </CardTitle>
                   <CardIcon>
                     <AiFillHeart size="35px" />
@@ -124,6 +172,20 @@ function CarePage() {
               </CardContainer>
             </ImageContainer>
           </Container>
+          <CardHelpContainer>
+            <TextCardHelp>
+              <H5>PRECISANDO DE AJUDA?</H5>
+              <H5>Fale comigo!</H5>
+              <ImageCardHelp>
+                <StyledImageCard>
+                  <PiWhatsappLogoThin size="70px" cursor={PointerEvent} />
+                </StyledImageCard>
+              </ImageCardHelp>
+              <EmailLinkContainer>
+                <a>pamelabioni@gmail.com</a>
+              </EmailLinkContainer>
+            </TextCardHelp>
+          </CardHelpContainer>
         </MainContainer>
       </ColouredContainer>
     </>
