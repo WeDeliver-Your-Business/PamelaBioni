@@ -5,6 +5,7 @@ import FrontPageImage from '../src/layout/frontPageImage/FrontPageImage'
 import ProfessionalProfile from '../src/layout/professionalProfile/ProfessionalProfile'
 import TopicsAreas from '../src/layout/topicsAreas/TopicsAreas'
 import CarePage from '../src/layout/carePage/CarePage'
+import ContactPage from '../src/layout/contactPage/ContactPage'
 
 function MainPage() {
   return (
@@ -14,6 +15,7 @@ function MainPage() {
       <ProfessionalProfile />
       <TopicsAreas />
       <CarePage />
+      <ContactPage />
     </>
   )
 }
