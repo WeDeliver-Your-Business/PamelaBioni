@@ -51,7 +51,7 @@ const WhiteBackground = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.ColorWhite};
-  width: 305px;
+  width: ${(props) => props.width};
   height: 375px;
   border-radius: 20px 100px 20px 100px;
   position: absolute;
@@ -136,7 +136,7 @@ function CarePage() {
             <ImageContainer>
               <CardContainer>
                 <IconImage imageName="Care1" type="png" />
-                <WhiteBackground>
+                <WhiteBackground width="308px">
                   <CardTitle>
                     <H5>Quando procurar uma mastologista?</H5>
                   </CardTitle>
@@ -148,7 +148,7 @@ function CarePage() {
               </CardContainer>
               <CardContainer>
                 <IconImage imageName="Care2" type="png" />
-                <WhiteBackground>
+                <WhiteBackground width="305px">
                   <CardTitle>
                     <H5>Qual a diferença entre nódulo e cisto mamário?</H5>
                   </CardTitle>
@@ -160,7 +160,7 @@ function CarePage() {
               </CardContainer>
               <CardContainer>
                 <IconImage imageName="Care3" type="png" />
-                <WhiteBackground>
+                <WhiteBackground width="305px">
                   <CardTitle>
                     <H5>Quando devo fazer exames de mama?</H5>
                   </CardTitle>
@@ -178,7 +178,7 @@ function CarePage() {
               <H5>Fale comigo!</H5>
               <ImageCardHelp>
                 <StyledImageCard>
-                  <PiWhatsappLogoThin size="70px" cursor={PointerEvent} />
+                  <PiWhatsappLogoThin size="70px" />
                 </StyledImageCard>
               </ImageCardHelp>
               <EmailLinkContainer>
