@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import H4 from '../../typograph/H4'
-
 import IconImage from '../../utils/iconImage/IconImage'
 
 const ColouredContainer = styled.div`

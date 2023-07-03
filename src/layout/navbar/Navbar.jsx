@@ -14,9 +14,12 @@ const Container = styled.div`
   @media screen and (max-width: 766px) {
     justify-content: space-between;
   }
-  @media screen and (min-width: 767px) and (max-width: 1024px) {
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
     width: 110%;
     gap: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 110%;
   }
 `
 
