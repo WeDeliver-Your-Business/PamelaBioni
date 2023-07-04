@@ -24,7 +24,7 @@ const MainContainer = styled.div`
   align-items: center;
   text-align: center;
   background-color: ${(props) => props.theme.primary};
-  border-radius: 0px 100px 20px 100px;
+  border-radius: 0px 100px 0px 100px;
 `
 const Container = styled.div`
   padding-bottom: 100px;
