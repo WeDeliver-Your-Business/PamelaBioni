@@ -97,6 +97,17 @@ const ImageCardHelp = styled.div`
 `
 const StyledImageCard = styled.div`
   cursor: pointer;
+
+  a {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    transition: all 0.3s;
+    position: relative;
+    text-decoration: none;
+    color: ${(props) => props.theme.secondary};
+  }
 `
 const EmailLinkContainer = styled.div`
   text-align: center;
@@ -108,6 +119,8 @@ const EmailLinkContainer = styled.div`
     line-height: 50px;
     transition: all 0.3s;
     position: relative;
+    text-decoration: none;
+    color: ${(props) => props.theme.secondary};
 
     :after {
       content: '';
@@ -178,11 +191,19 @@ function CarePage() {
               <H5>Fale comigo!</H5>
               <ImageCardHelp>
                 <StyledImageCard>
-                  <PiWhatsappLogoThin size="70px" />
+                  <a
+                    href="https://web.whatsapp.com/send?phone=554599375289"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <PiWhatsappLogoThin size="70px" />
+                  </a>
                 </StyledImageCard>
               </ImageCardHelp>
               <EmailLinkContainer>
-                <a>pamelabioni@gmail.com</a>
+                <a href="mailto:pamelabioni@gmail.com?subject=Olá doutora, preciso de ajuda!">
+                  pamelabioni@gmail.com
+                </a>
               </EmailLinkContainer>
             </TextCardHelp>
           </CardHelpContainer>

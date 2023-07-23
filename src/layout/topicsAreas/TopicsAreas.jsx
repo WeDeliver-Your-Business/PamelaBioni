@@ -57,8 +57,6 @@ function TopicsAreas() {
       'Fibroadenoma',
       'Reconstrução mamária',
       'Síndrome de predisposição hereditária ao câncer de mama',
-      'Mutação genética',
-      'Alto risco familiar',
       'Ginecomastia',
       'Mastite'
     ],

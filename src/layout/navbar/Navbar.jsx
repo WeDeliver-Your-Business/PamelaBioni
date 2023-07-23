@@ -4,7 +4,7 @@ import Burguer from './Burguer'
 
 const Container = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   height: 105px;
   justify-content: space-around;
@@ -14,13 +14,15 @@ const Container = styled.div`
   @media screen and (max-width: 766px) {
     justify-content: space-between;
   }
-  @media screen and (min-width: 767px) and (max-width: 1023px) {
+
+  /* @media screen and (min-width: 767px) and (max-width: 1023px) {
     width: 110%;
     gap: 0;
-  }
-  @media screen and (min-width: 1024px) {
+  } */
+
+  /* @media screen and (min-width: 1024px) {
     width: 110%;
-  }
+  } */
 `
 
 export default function Navbar() {

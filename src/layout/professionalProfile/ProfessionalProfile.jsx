@@ -8,13 +8,13 @@ import H5 from '../../typograph/H5'
 const Container = styled.div`
   display: flex;
 
-  @media screen and (min-width: 1024px) {
+  /* @media screen and (min-width: 1024px) {
     width: 110%;
 
     & > img {
       height: 90vh;
     }
-  }
+  } */
 `
 const MainTextContainer = styled.div`
   color: ${(props) => props.theme.secondary};
@@ -23,17 +23,17 @@ const MainTextContainer = styled.div`
   flex-direction: column;
   border-radius: 20px 100px 0px 100px;
 
-  @media screen and (min-width: 2550px) {
+  /* @media screen and (min-width: 2550px) {
     width: 100%;
-  }
+  } */
 `
 const TextHeaderContainer = styled.div`
   text-align: center;
   padding: 100px 0 30px 0;
 
-  @media screen and (min-width: 1024px) {
+  /* @media screen and (min-width: 1024px) {
     padding: 30px 0 5px 0;
-  }
+  } */
 `
 const TextBody = styled.div`
   display: flex;
@@ -42,27 +42,27 @@ const TextBody = styled.div`
   h5 {
     padding: 25px 27px 5px 30px;
 
-    @media screen and (min-width: 1024px) {
+    /* @media screen and (min-width: 1024px) {
       font-size: 18px;
       line-height: 35px;
-    }
+    } */
   }
 
   img {
     padding-left: 25px;
 
-    @media screen and (min-width: 1024px) {
+    /* @media screen and (min-width: 1024px) {
       font-size: 50px;
-    }
+    } */
   }
 `
 const KnowMoreContainer = styled.div`
   text-align: center;
   padding: 40px 0 80px 0;
 
-  @media screen and (min-width: 1024px) {
+  /* @media screen and (min-width: 1024px) {
     padding: 20px 0 8px 0;
-  }
+  } */
 `
 const KnowMore = styled.a`
   cursor: pointer;
@@ -71,6 +71,11 @@ const KnowMore = styled.a`
   font-weight: bold;
   transition: all 0.3s;
   position: relative;
+
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.secondary};
+  }
 
   :after {
     content: '';
@@ -130,7 +135,15 @@ export default function ProfessionalProfile() {
             </H5>
           </TextBody>
           <KnowMoreContainer>
-            <KnowMore>Saiba mais</KnowMore>
+            <KnowMore>
+              <a
+                href="https://www.escavador.com/sobre/197413385/pamela-ogassawara-bioni"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Saiba mais
+              </a>
+            </KnowMore>
           </KnowMoreContainer>
         </MainTextContainer>
       </Container>

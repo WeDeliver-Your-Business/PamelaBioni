@@ -6,9 +6,9 @@ const StyledFlex = styled.div`
   position: relative;
   z-index: -1;
 
-  @media screen and (min-width: 1024px) {
+  /* @media screen and (min-width: 1024px) {
     width: 110%;
-  }
+  } */
 `
 const StyledImage = styled.div`
   background-image: url('${(props) => props.image}');
@@ -47,10 +47,10 @@ const InfoContainer = styled.div`
   background-color: white;
   border-radius: 20px 100px 20px 100px;
 
-  @media screen and (min-width: 1024px) {
+  /* @media screen and (min-width: 1024px) {
     width: 110%;
     border-radius: 20px 65px 20px 100px;
-  }
+  } */
 `
 
 function FrontPageImage({ children, image }) {

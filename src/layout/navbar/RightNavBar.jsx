@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { Link } from 'react-scroll'
 
 import styled from 'styled-components'
 
@@ -94,15 +95,35 @@ const RightNavBar = ({ open }) => {
         <IconImage imageName="LogotipoNavbar" type="png" size="308px" height="103px" />
       </StyledLogo>
       <StyledUl open={open}>
-        <li onClick={handleClicktoMyAdds}>Dra. Pâmela Bioni</li>
+        <li onClick={handleClicktoMyAdds}>
+          <Link to="introText" smooth={true} offset={870} duration={800}>
+            Dra. Pâmela Bioni
+          </Link>
+        </li>
         <span> | </span>
-        <li onClick={handleClickToNewProduct}>Áreas de atuação</li>
+        <li onClick={handleClickToNewProduct}>
+          <Link to="professionalProfile" smooth={true} offset={5} duration={800}>
+            Perfil profissional
+          </Link>
+        </li>
         <span> | </span>
-        <li onClick={handleClicktoMyAdds}>Cuidados</li>
+        <li onClick={handleClicktoMyAdds}>
+          <Link to="topicAreas" smooth={true} offset={420} duration={800}>
+            Cuidados
+          </Link>
+        </li>
         <span> | </span>
-        <li onClick={handleClickToReports}>Saiba mais</li>
+        <li onClick={handleClickToReports}>
+          <Link to="carePage" smooth={true} offset={670} duration={800}>
+            Saiba mais
+          </Link>
+        </li>
         <span> | </span>
-        <li onClick={handleClickToReports}>Contatos</li>
+        <li onClick={handleClickToReports}>
+          <Link to="contactPage" smooth={true} offset={170} duration={800}>
+            Contatos
+          </Link>
+        </li>
       </StyledUl>
     </>
   )
