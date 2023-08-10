@@ -2,69 +2,25 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable prettier/prettier */
 import styled from 'styled-components'
-import { Link } from 'react-scroll'
 import { useState } from 'react'
 
 import { MdMapsHomeWork } from 'react-icons/md'
 import { FaHospital } from 'react-icons/fa'
 import { PiInstagramLogoFill } from 'react-icons/pi'
 
-import IconImage from '../../utils/iconImage/IconImage'
-import H3 from '../../typograph/H3'
 import H5 from '../../typograph/H5'
 
-const ColouredContainer = styled.div`
-  background-color: ${(props) => props.theme.primary};
-  border-radius: 30px 0px 0px 0px;
-
-  @media screen and (max-width: 844px) {
-    width: 100%;
-    display: none;
-  }
-`
 
 const Container = styled.div`
-  background-image: url('/contactPageImage.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: ${(props) => props.theme.ColorWhite};
   display: flex;
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 100px;
   height: 150vh;
-`
-
-const ContainerArrow = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-
-const StyledArrow = styled.a`
-  padding-bottom: 25px;
-  cursor: pointer;
-`
-
-const LineColour = styled.div`
-  background-color: ${(props) => props.theme.primary};
-  box-sizing: border-box;
-  padding: 0.5px 0;
-`
-
-const LogoContainer = styled.div`
-  margin-top: 250px;
-  margin-left: 120px;
-
-  @media screen and (max-width: 844px) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 0;
-    gap: 0;
-  }
+  width: 100%;
+  margin-top: -90px;
+  z-index: -10;
 `
 
 const InfoContainer = styled.div`
@@ -90,9 +46,8 @@ const CityContainer = styled.div`
   @media screen and (max-width: 844px) {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
+    padding-left: 10px;
+}
 `
 
 const AppointmentPlaces = styled.div`
@@ -105,9 +60,8 @@ const AppointmentPlaces = styled.div`
   @media screen and (max-width: 844px) {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
+    padding-left: 10px;
+}
 `
 
 const SocialMedia = styled.div`
@@ -126,9 +80,12 @@ const SocialMedia = styled.div`
   @media screen and (max-width: 844px) {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 0;
+    padding-left: 10px;
   }
+`
+
+const SocialMediaText = styled.div`
+    display: flex;
 `
 
 const ModalContainer = styled.div`
@@ -136,7 +93,6 @@ const ModalContainer = styled.div`
     width: 100%;
     display: flex;
     margin-left: 0px;
-    background-color: red;
   }
 `
 
@@ -164,22 +120,6 @@ const ModalWithAdress = styled.div`
     display: flex;
     margin-left: 0px;
     margin-top: 0px;
-    background-color: red;
-  }
-`
-
-const Footer = styled.div`
-  display: flex;
-  width: 1200px;
-  justify-content: center;
-  text-align: center;
-  margin-left: 400px;
-  font-size: 14px;
-
-  @media screen and (max-width: 844px) {
-    width: 100%;
-    display: flex;
-    margin-left: 0px;
   }
 `
 
@@ -193,58 +133,55 @@ const MainInfoContainer = styled.div`
   }
 `
 
-function ContactPage() {
+function ContactPageToMobile() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <ColouredContainer>
         <Container>
-          <ContainerArrow>
-            <StyledArrow>
-              <Link to="navBar" smooth={true} offset={5} duration={800}>
-                <IconImage imageName="ArrowDown" type="png" size="40px" />
-              </Link>
-            </StyledArrow>
-          </ContainerArrow>
-          <LineColour />
-            <LogoContainer>
-              <img src="LogoLastPage.png" width="284" height="296"></img>
-            </LogoContainer>
           <MainInfoContainer>
           <InfoContainer>
             <CityContainer>
-              <MdMapsHomeWork size="35px" color="#C39983"/>
-              <H3>Brasília - DF</H3>
+              <MdMapsHomeWork size="30px" color="#C39983"/>
+              <H5>Brasília - DF</H5>
             </CityContainer>
             <AppointmentPlaces>
-              <FaHospital size="35px" color="#C39983" />
-              <H3>
+              <FaHospital size="30px" color="#C39983" />
+              <H5>
                 <a
                   onMouseEnter={() => setShowModal(true)}
                   onMouseLeave={() => setShowModal(false)}
                 >Locais de atendimento</a>
-              </H3>
+              </H5>
             </AppointmentPlaces>
             <SocialMedia>
-              <PiInstagramLogoFill size="35px" color="#C39983" />
-              <H3>
+              <PiInstagramLogoFill size="30px" color="#C39983" />
+              <SocialMediaText>
+              <H5>
                 <a 
                   href="https://www.instagram.com/drapamelabioni/" 
                   target="_blank"
                   rel="noreferrer">
                     @drapamelabioni
                 </a>
-              </H3>
-              <H3>/</H3>
-              <H3>
+              </H5>
+              <H5>                
+                <a
+                  href="https://www.instagram.com/ummasmulheres/" 
+                  target="_blank"
+                  rel="noreferrer">
+                    @ummasmulheres
+                </a></H5>
+              </SocialMediaText>
+              {/* <H3>/</H3>
+              <H4>
                 <a
                   href="https://www.instagram.com/ummasmulheres/" 
                   target="_blank"
                   rel="noreferrer">
                     @ummasmulheres
                 </a>
-              </H3>
+              </H4> */}
             </SocialMedia>
           </InfoContainer>
           <ModalContainer>
@@ -262,16 +199,9 @@ function ContactPage() {
               )}
           </ModalContainer>
           </MainInfoContainer>
-          <LineColour />
-          <Footer>
-            <H5>
-              © 2023 - Pâmlea Ogassawara Bioni - Todos os direitos reservados <br></br>Proudly made by We Deliver Your Business
-            </H5>
-          </Footer>
         </Container>
-      </ColouredContainer>
     </>
   )
 }
 
-export default ContactPage
+export default ContactPageToMobile

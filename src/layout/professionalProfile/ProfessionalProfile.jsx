@@ -8,13 +8,10 @@ import H5 from '../../typograph/H5'
 const Container = styled.div`
   display: flex;
 
-  /* @media screen and (min-width: 1024px) {
-    width: 110%;
-
-    & > img {
-      height: 90vh;
-    }
-  } */
+  @media screen and (max-width: 844px) {
+    width: 100%;
+    display: none;
+  }
 `
 const MainTextContainer = styled.div`
   color: ${(props) => props.theme.secondary};

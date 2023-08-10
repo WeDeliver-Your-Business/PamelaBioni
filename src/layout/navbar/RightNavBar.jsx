@@ -8,6 +8,12 @@ import IconImage from '../../utils/iconImage/IconImage'
 const StyledLogo = styled.div`
   width: 308px;
   cursor: pointer;
+  background-color: ${(props) => props.theme.NavBarBackground};
+
+  @media screen and (max-width: 844px) {
+    width: 100%;
+    display: flex;
+  }
 `
 
 const StyledUl = styled.ul`
@@ -28,6 +34,7 @@ const StyledUl = styled.ul`
 
     @media (max-width: 502px) {
       top: 45px;
+      margin-top: 70px;
     }
   }
 
@@ -57,19 +64,17 @@ const StyledUl = styled.ul`
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
-    height: 40vh;
+    height: 100vh;
     width: 310px;
     gap: 10px;
     font-size: 35px;
     transition: transform 0.3s ease-in-out;
   }
-  @media screen and (min-width: 767px) and (max-width: 1024px) {
-    gap: 10px;
-    margin-right: 10px;
-  }
+
   span {
     @media (max-width: 502px) {
       color: ${(props) => props.theme.NavBarBackground};
+      margin-top: 20px;
     }
   }
 `

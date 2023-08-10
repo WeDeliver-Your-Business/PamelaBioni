@@ -10,6 +10,11 @@ const ColouredContainer = styled.div`
   background-color: ${(props) => props.theme.primary};
   width: 100%;
   border-radius: 20px 0px 20px 0px;
+
+  @media screen and (max-width: 844px) {
+    width: 100%;
+    display: none;
+  }
 `
 
 const Container = styled.div`

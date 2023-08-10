@@ -12,11 +12,6 @@ const ColouredContainer = styled.div`
   background-color: ${(props) => props.theme.ColorWhite};
   width: 100%;
   border-radius: 20px 0px 20px 0px;
-
-  @media screen and (max-width: 844px) {
-    width: 100%;
-    display: none;
-  }
 `
 
 const MainContainer = styled.div`
@@ -36,12 +31,13 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: ${(props) => props.theme.secondary};
 `
 
 const ImageContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  gap: 150px;
+  gap: 250px;
   margin: 40px 0 20px 0;
 
   @media screen and (max-width: 844px) {
@@ -89,11 +85,11 @@ const CardIcon = styled.div`
   margin-top: 50px;
 `
 const CardHelpContainer = styled.div`
-  margin-top: 250px;
+  margin-top: 150px;
   padding-top: 50px;
-  margin-bottom: 300px;
+  margin-bottom: 20px;
   background-color: ${(props) => props.theme.ColorWhite};
-  width: 790px;
+  width: 300px;
   height: 335px;
   border-radius: 20px 100px 20px 100px;
 `
@@ -125,7 +121,7 @@ const EmailLinkContainer = styled.div`
 
   a {
     cursor: pointer;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
     line-height: 50px;
     transition: all 0.3s;
@@ -150,7 +146,7 @@ const EmailLinkContainer = styled.div`
   }
 `
 
-function CarePage() {
+function CarePageToMobile() {
   return (
     <>
       <ColouredContainer>
@@ -224,4 +220,4 @@ function CarePage() {
   )
 }
 
-export default CarePage
+export default CarePageToMobile

@@ -18,6 +18,12 @@ const MasterContainer = styled.div`
   margin-top: -90px;
   display: flex;
   padding-top: 100px;
+
+  @media screen and (max-width: 844px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const MainContainer = styled.div`
@@ -33,10 +39,6 @@ const MainContainer = styled.div`
     margin-top: -50px;
     padding-left: 25px;
   } */
-`
-
-const SecondaryContainer = styled.div`
-  display: flex;
 `
 
 const QuotContainer = styled.div`
@@ -63,15 +65,21 @@ const TextContainer = styled.div`
   } */
 `
 
+const SecondaryContainer = styled.div`
+  display: flex;
+`
+
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   margin-right: 50px;
 
-  /* @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    margin-top: 10px;
-  } */
+  @media (max-width: 502px) {
+    width: 360px;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
 `
 
 const CRMText = styled.div`

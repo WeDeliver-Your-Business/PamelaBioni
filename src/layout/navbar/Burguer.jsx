@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 import RightNavbar from './RightNavBar'
 
-const StyledBurger = styled.div`
+const StyledBurguer = styled.div`
   width: 3rem;
-  height: 2.5rem;
+  height: 2rem;
+  margin-top: 30px;
   position: fixed;
-  top: 20px;
+  top: 15px;
   right: 5px;
   z-index: 20;
   display: none;
@@ -18,21 +19,18 @@ const StyledBurger = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
   }
-  @media (max-width: 350px) {
-    top: 8px;
-  }
 
   div {
-    width: 2.1rem;
+    width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? '#FFFFFF' : '#FFFFFF')};
-    border: 3px;
-    transform-origin: -12.5px;
+    background-color: ${({ open }) => (open ? '#C39983' : '#C39983')};
+    border-radius: 10px;
+    transform-origin: 1px;
     transition: all 0.3s linear;
     cursor: pointer;
 
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? 'rotate(27deg)' : 'rotate(0deg)')};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0deg)')};
     }
 
     &:nth-child(2) {
@@ -41,7 +39,7 @@ const StyledBurger = styled.div`
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? 'rotate(-26deg)' : 'rotate(0deg)')};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0deg)')};
     }
   }
 `
@@ -64,7 +62,7 @@ const Burguer = () => {
 
   return (
     <>
-      <StyledBurger
+      <StyledBurguer
         open={open}
         ref={menuRef}
         onClick={() => setOpen(!open)}
@@ -73,7 +71,7 @@ const Burguer = () => {
         <div />
         <div />
         <div />
-      </StyledBurger>
+      </StyledBurguer>
       <RightNavbar open={open} />
     </>
   )

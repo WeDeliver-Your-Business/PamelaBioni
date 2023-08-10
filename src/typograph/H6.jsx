@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-const H5 = styled.h5`
-  font-size: 21px;
+const H6 = styled.h6`
+  font-size: 18px;
   font-weight: bold;
   line-height: 50px;
 `
 
-export default H5
+export default H6
