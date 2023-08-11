@@ -11,7 +11,7 @@ const StyledBurguer = styled.div`
   position: fixed;
   top: 15px;
   right: 5px;
-  z-index: 20;
+  z-index: 90;
   display: none;
 
   @media (max-width: 502px) {

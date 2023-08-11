@@ -97,7 +97,7 @@ const RightNavBar = ({ open }) => {
   return (
     <>
       <StyledLogo onClick={handleClicktoMyAdds}>
-        <IconImage imageName="LogotipoNavbar" type="png" size="308px" height="103px" />
+        <IconImage imageName="LogotipoNavbar" type="png" size="308px" height="100px" />
       </StyledLogo>
       <StyledUl open={open}>
         <li onClick={handleClicktoMyAdds}>

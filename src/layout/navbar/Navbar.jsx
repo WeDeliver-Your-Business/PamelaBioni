@@ -10,6 +10,9 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: ${(props) => props.theme.NavBarBackground};
+
+  position: fixed;
+  z-index: 100;
 `
 
 export default function Navbar() {

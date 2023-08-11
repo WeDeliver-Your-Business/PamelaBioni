@@ -44,7 +44,6 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* height: calc(100vh - 60px); */
   overflow-y: auto;
 
   &:before,
@@ -71,9 +70,14 @@ const ToNotDisplayTitle = styled.div`
     align-items: center;
     flex-direction: column;
     background-color: ${(props) => props.theme.secondary};
-    height: 79vh;
+    height: 100vh;
     color: ${(props) => props.theme.primary};
     z-index: -2;
+    padding-top: 100px;
+
+    h4 {
+      font-size: 24px;
+    }
   }
 `
 
@@ -97,7 +101,7 @@ const TopicsAreasContainer = styled.div`
   border: none;
   border-radius: 20px 100px 20px 100px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 93px;
 `
 
 function FrontPageImage({ children, image }) {
@@ -108,8 +112,8 @@ function FrontPageImage({ children, image }) {
         <StyledContainer>{children}</StyledContainer>
       </StyledFlex>
       <ToNotDisplayTitle>
-        <H4>Dra. Pâmela Ogassawara Bioni</H4>
-        <H5>Mastologista e obstetra</H5>
+        <H5>Dra. Pâmela Ogassawara Bioni</H5>
+        <H4>Mastologista</H4>
         <ImageContainer>
           <IconImage imageName="FirstPhoto" type="png" />
         </ImageContainer>

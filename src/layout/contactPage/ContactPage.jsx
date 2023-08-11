@@ -164,7 +164,6 @@ const ModalWithAdress = styled.div`
     display: flex;
     margin-left: 0px;
     margin-top: 0px;
-    background-color: red;
   }
 `
 
@@ -223,7 +222,8 @@ function ContactPage() {
                 <a
                   onMouseEnter={() => setShowModal(true)}
                   onMouseLeave={() => setShowModal(false)}
-                >Locais de atendimento</a>
+                >Locais de atendimento
+                </a>
               </H3>
             </AppointmentPlaces>
             <SocialMedia>

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { useState } from 'react'
 
-import { AiFillHeart, AiOutlinePlusCircle } from 'react-icons/ai'
+import { AiFillHeart, AiOutlineHeart, AiOutlinePlusCircle } from 'react-icons/ai'
 import { PiWhatsappLogoThin } from 'react-icons/pi'
 
 import H4 from '../../typograph/H4'
@@ -17,7 +18,7 @@ const ColouredContainer = styled.div`
 const MainContainer = styled.div`
   padding-top: 80px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +148,22 @@ const EmailLinkContainer = styled.div`
 `
 
 function CarePageToMobile() {
+  const [isHeartFilled, setIsHeartFilled] = useState(false)
+  const [isSecondHeartFilled, setIsSecondHeartFilled] = useState(false)
+  const [isThirdHeartFilled, setIsThirdHeartFilled] = useState(false)
+
+  const handleHeartClick = () => {
+    setIsHeartFilled(!isHeartFilled)
+  }
+
+  const handleSecondHeartClick = () => {
+    setIsSecondHeartFilled(!isSecondHeartFilled)
+  }
+
+  const handleThirdHeartClick = () => {
+    setIsThirdHeartFilled(!isThirdHeartFilled)
+  }
+
   return (
     <>
       <ColouredContainer>
@@ -161,7 +178,11 @@ function CarePageToMobile() {
                     <H5>Quando procurar uma mastologista?</H5>
                   </CardTitle>
                   <CardIcon>
-                    <AiFillHeart size="35px" />
+                    {isHeartFilled ? (
+                      <AiFillHeart size="35px" onClick={handleHeartClick} />
+                    ) : (
+                      <AiOutlineHeart size="35px" onClick={handleHeartClick} />
+                    )}
                     <AiOutlinePlusCircle size="35px" />
                   </CardIcon>
                 </WhiteBackground>
@@ -173,7 +194,11 @@ function CarePageToMobile() {
                     <H5>Qual a diferença entre nódulo e cisto mamário?</H5>
                   </CardTitle>
                   <CardIcon>
-                    <AiFillHeart size="35px" />
+                    {isSecondHeartFilled ? (
+                      <AiFillHeart size="35px" onClick={handleSecondHeartClick} />
+                    ) : (
+                      <AiOutlineHeart size="35px" onClick={handleSecondHeartClick} />
+                    )}
                     <AiOutlinePlusCircle size="35px" />
                   </CardIcon>
                 </WhiteBackground>
@@ -185,7 +210,11 @@ function CarePageToMobile() {
                     <H5>Quando devo fazer exames de mama?</H5>
                   </CardTitle>
                   <CardIcon>
-                    <AiFillHeart size="35px" />
+                    {isThirdHeartFilled ? (
+                      <AiFillHeart size="35px" onClick={handleThirdHeartClick} />
+                    ) : (
+                      <AiOutlineHeart size="35px" onClick={handleThirdHeartClick} />
+                    )}
                     <AiOutlinePlusCircle size="35px" />
                   </CardIcon>
                 </WhiteBackground>
@@ -199,7 +228,7 @@ function CarePageToMobile() {
               <ImageCardHelp>
                 <StyledImageCard>
                   <a
-                    href="https://web.whatsapp.com/send?phone=554599375289"
+                    href="https://web.whatsapp.com/send?phone=556192392319"
                     target="_blank"
                     rel="noreferrer"
                   >

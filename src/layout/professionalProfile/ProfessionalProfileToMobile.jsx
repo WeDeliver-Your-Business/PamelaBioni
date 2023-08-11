@@ -33,7 +33,7 @@ const TextBody = styled.div`
   }
 `
 
-const KnowMore = styled.a`
+const KnowMore = styled.div`
   cursor: pointer;
   font-size: 18px;
   line-height: 77px;

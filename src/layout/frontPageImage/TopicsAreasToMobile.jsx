@@ -9,7 +9,7 @@ const Container = styled.div`
 
   @media (max-width: 502px) {
     width: 100%;
-    height: 17vh;
+    height: 18vh;
     margin-top: 30px;
     background-color: ${(props) => props.theme.primary};
 
@@ -24,8 +24,7 @@ const Container = styled.div`
 `
 
 const MainContainer = styled.div`
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
+  padding: 0px 20px 0px 20px;
 `
 
 const ImageContainer = styled.div`
@@ -71,7 +70,6 @@ function TopicsAreasToMobile() {
         <ImageContainer>
           <IconImage imageName="TopicsAreas_image" type="png" size="45" />
         </ImageContainer>
-
         <MainContainer>
           <AnimatedText>{text}</AnimatedText>
           <StyledCursorSpan>

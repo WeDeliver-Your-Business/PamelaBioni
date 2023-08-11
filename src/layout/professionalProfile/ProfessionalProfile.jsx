@@ -61,7 +61,7 @@ const KnowMoreContainer = styled.div`
     padding: 20px 0 8px 0;
   } */
 `
-const KnowMore = styled.a`
+const KnowMore = styled.div`
   cursor: pointer;
   font-size: 36px;
   line-height: 77px;

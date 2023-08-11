@@ -41,7 +41,7 @@ const InfoContainer = styled.div`
 const CityContainer = styled.div`
   display: flex; 
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 
   @media screen and (max-width: 844px) {
     width: 100%;
@@ -53,7 +53,7 @@ const CityContainer = styled.div`
 const AppointmentPlaces = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 
   cursor: pointer;
 
@@ -67,7 +67,7 @@ const AppointmentPlaces = styled.div`
 const SocialMedia = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   flex-direction: row;
   
   cursor: pointer;
@@ -84,15 +84,13 @@ const SocialMedia = styled.div`
   }
 `
 
-const SocialMediaText = styled.div`
-    display: flex;
-`
-
 const ModalContainer = styled.div`
+
   @media screen and (max-width: 844px) {
-    width: 100%;
+    width:  100%;
     display: flex;
-    margin-left: 0px;
+    margin-top: -300px;
+    margin-bottom: 280px;
   }
 `
 
@@ -101,11 +99,13 @@ const ModalWithAdress = styled.div`
   background-color: #f9f9f9;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 760px;
   margin-left: 200px;
   margin-top: 150px;
   border: 1px solid ${(props) => props.theme.primary};
-  border-radius: 20px 100px 20px 100px;
+  border-radius: 20px 80px 20px 80px;
 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -156,7 +156,7 @@ function ContactPageToMobile() {
             </AppointmentPlaces>
             <SocialMedia>
               <PiInstagramLogoFill size="30px" color="#C39983" />
-              <SocialMediaText>
+            
               <H5>
                 <a 
                   href="https://www.instagram.com/drapamelabioni/" 
@@ -165,6 +165,7 @@ function ContactPageToMobile() {
                     @drapamelabioni
                 </a>
               </H5>
+              &nbsp;
               <H5>                
                 <a
                   href="https://www.instagram.com/ummasmulheres/" 
@@ -172,16 +173,7 @@ function ContactPageToMobile() {
                   rel="noreferrer">
                     @ummasmulheres
                 </a></H5>
-              </SocialMediaText>
-              {/* <H3>/</H3>
-              <H4>
-                <a
-                  href="https://www.instagram.com/ummasmulheres/" 
-                  target="_blank"
-                  rel="noreferrer">
-                    @ummasmulheres
-                </a>
-              </H4> */}
+             
             </SocialMedia>
           </InfoContainer>
           <ModalContainer>
