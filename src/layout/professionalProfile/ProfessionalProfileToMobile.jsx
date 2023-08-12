@@ -22,6 +22,7 @@ const TextHeaderContainer = styled.div`
   text-align: center;
   padding: 0px 0 30px 0;
 `
+
 const TextBody = styled.div`
   display: flex;
   align-items: center;
@@ -33,13 +34,25 @@ const TextBody = styled.div`
   }
 `
 
+const KnowMoreContainer = styled.div`
+  text-align: center;
+  padding: 40px 0 80px 0;
+  display: flex;
+  justify-content: center;
+
+  /* @media screen and (min-width: 1024px) {
+    padding: 20px 0 8px 0;
+  } */
+`
+
 const KnowMore = styled.div`
   cursor: pointer;
   font-size: 18px;
-  line-height: 77px;
+  line-height: 30px;
   font-weight: bold;
   transition: all 0.3s;
   position: relative;
+  width: 200px;
 
   a {
     text-decoration: none;
@@ -58,7 +71,8 @@ const KnowMore = styled.div`
   }
 
   :hover:after {
-    width: 100%;
+    width: 50%;
+    margin-left: 50px;
   }
 `
 
@@ -95,15 +109,17 @@ export default function ProfessionalProfileToMobile() {
               Mastologia
             </H6>
           </TextBody>
-          <KnowMore>
-            <a
-              href="https://www.escavador.com/sobre/197413385/pamela-ogassawara-bioni"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Saiba mais
-            </a>
-          </KnowMore>
+          <KnowMoreContainer>
+            <KnowMore>
+              <a
+                href="https://www.escavador.com/sobre/197413385/pamela-ogassawara-bioni"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Saiba mais
+              </a>
+            </KnowMore>
+          </KnowMoreContainer>
         </TextHeaderContainer>
       </Container>
     </>
