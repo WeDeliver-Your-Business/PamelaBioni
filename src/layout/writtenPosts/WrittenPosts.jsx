@@ -26,6 +26,20 @@ const PostModel1 = styled.div`
   h5 {
     text-align: center;
   }
+
+  @media (max-width: 502px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 270vh;
+    padding-top: 110px;
+    text-align: center;
+
+    img {
+      display: none;
+    }
+  }
 `
 
 const TextPostContainer = styled.div`
@@ -34,6 +48,15 @@ const TextPostContainer = styled.div`
   width: 1300px;
   padding-left: 100px;
   gap: 10px;
+
+  @media (max-width: 502px) {
+    display: flex;
+    width: 100%;
+    height: 200vh;
+    flex-direction: column;
+    padding-left: 0;
+    padding: 10px;
+  }
 `
 
 const TextBody = styled.div`
@@ -54,9 +77,7 @@ const ImagePostContainer = styled.div`
   margin-left: 150px;
 
   @media screen and (max-width: 844px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 `
 
@@ -86,6 +107,15 @@ const PostModel2 = styled.div`
   h1 {
     font-size: 48px;
   }
+
+  @media (max-width: 502px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 270vh;
+    padding-top: 110px;
+  }
 `
 
 const PostModel3 = styled.div`
@@ -101,6 +131,15 @@ const PostModel3 = styled.div`
 
   h1 {
     font-size: 48px;
+  }
+
+  @media (max-width: 502px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 270vh;
+    padding-top: 110px;
   }
 `
 
