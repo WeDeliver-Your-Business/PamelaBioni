@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 import Navbar from '../src/layout/navbar/Navbar'
-import FrontPageImage from '../src/layout/frontPageImage/FrontPageImage'
-import ProfessionalProfile from '../src/layout/professionalProfile/ProfessionalProfile'
-import TopicsAreas from '../src/layout/topicsAreas/TopicsAreas'
+import WrittenPosts from '../src/layout/writtenPosts/WrittenPosts'
 import CarePage from '../src/layout/carePage/CarePage'
 import ContactPage from '../src/layout/contactPage/ContactPage'
 
@@ -63,13 +61,7 @@ function MainPage() {
             <Navbar />
           </div>
           <div id="introText">
-            <FrontPageImage />
-          </div>
-          <div id="professionalProfile">
-            <ProfessionalProfile />
-          </div>
-          <div id="topicAreas">
-            <TopicsAreas />
+            <WrittenPosts />
           </div>
           <div id="carePage">
             <CarePage />
