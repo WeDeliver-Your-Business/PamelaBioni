@@ -39,6 +39,17 @@ const PostModel1 = styled.div`
     img {
       display: none;
     }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      line-height: normal;
+      padding: 20px;
+    }
+
+    h5 {
+      text-align: center;
+    }
   }
 `
 
@@ -113,8 +124,25 @@ const PostModel2 = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 270vh;
-    padding-top: 110px;
+    height: 220vh;
+    padding-top: 40px;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      line-height: normal;
+      padding: 20px;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: normal;
+      padding: 20px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
   }
 `
 
@@ -138,8 +166,25 @@ const PostModel3 = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 270vh;
-    padding-top: 110px;
+    height: 220vh;
+    padding-top: 40px;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      line-height: normal;
+      padding: 20px;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: normal;
+      padding: 20px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
   }
 `
 
