@@ -46,10 +46,11 @@ const ImageContainer = styled.div`
   gap: 150px;
   margin: 40px 0 20px 0;
 
-  @media screen and (max-width: 844px) {
+  @media screen and (max-width: 1220px) {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 250px;
   }
 `
 

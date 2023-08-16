@@ -13,56 +13,51 @@ const Container = styled.div`
     display: none;
   }
 `
+
 const MainTextContainer = styled.div`
   color: ${(props) => props.theme.secondary};
   background-color: ${(props) => props.theme.primary};
   display: flex;
   flex-direction: column;
   border-radius: 20px 100px 0px 100px;
-
-  /* @media screen and (min-width: 2550px) {
-    width: 100%;
-  } */
+  width: 100%;
 `
+
+const MainImage = styled.div`
+  height: auto;
+
+  img {
+    @media screen and (max-width: 1220px) {
+      display: none;
+    }
+  }
+`
+
 const TextHeaderContainer = styled.div`
   text-align: center;
-  padding: 100px 0 30px 0;
-
-  /* @media screen and (min-width: 1024px) {
-    padding: 30px 0 5px 0;
-  } */
+  padding: 40px 0 30px 0;
 `
+
 const TextBody = styled.div`
   display: flex;
   align-items: center;
 
   h5 {
     padding: 25px 27px 5px 30px;
-
-    /* @media screen and (min-width: 1024px) {
-      font-size: 18px;
-      line-height: 35px;
-    } */
   }
 
   img {
     padding-left: 25px;
-
-    /* @media screen and (min-width: 1024px) {
-      font-size: 50px;
-    } */
   }
 `
+
 const KnowMoreContainer = styled.div`
   text-align: center;
   padding: 40px 0 80px 0;
   display: flex;
   justify-content: center;
-
-  /* @media screen and (min-width: 1024px) {
-    padding: 20px 0 8px 0;
-  } */
 `
+
 const KnowMore = styled.div`
   cursor: pointer;
   font-size: 36px;
@@ -97,7 +92,9 @@ export default function ProfessionalProfile() {
   return (
     <>
       <Container>
-        <IconImage imageName="ProfessionalProfilePhoto" type="png" />
+        <MainImage>
+          <IconImage imageName="ProfessionalProfilePhoto" type="png" />
+        </MainImage>
         <MainTextContainer>
           <TextHeaderContainer>
             <H3>Perfil Profissional</H3>

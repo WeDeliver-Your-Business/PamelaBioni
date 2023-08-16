@@ -81,6 +81,10 @@ const SocialMedia = styled.div`
     width: 100%;
     display: flex;
     padding-left: 10px;
+
+    h5 {
+      font-size: 18px;
+    }
   }
 `
 
@@ -156,7 +160,6 @@ function ContactPageToMobile() {
             </AppointmentPlaces>
             <SocialMedia>
               <PiInstagramLogoFill size="30px" color="#C39983" />
-            
               <H5>
                 <a 
                   href="https://www.instagram.com/drapamelabioni/" 
@@ -173,7 +176,6 @@ function ContactPageToMobile() {
                   rel="noreferrer">
                     @ummasmulheres
                 </a></H5>
-             
             </SocialMedia>
           </InfoContainer>
           <ModalContainer>

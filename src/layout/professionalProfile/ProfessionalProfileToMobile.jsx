@@ -15,6 +15,11 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    h3 {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 `
 
@@ -36,13 +41,9 @@ const TextBody = styled.div`
 
 const KnowMoreContainer = styled.div`
   text-align: center;
-  padding: 40px 0 80px 0;
+  padding: 40px 0 20px 0;
   display: flex;
   justify-content: center;
-
-  /* @media screen and (min-width: 1024px) {
-    padding: 20px 0 8px 0;
-  } */
 `
 
 const KnowMore = styled.div`

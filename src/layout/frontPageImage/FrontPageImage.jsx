@@ -44,7 +44,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  overflow-y: auto;
+  /* overflow-y: auto; */
 
   &:before,
   &:after {
@@ -57,7 +57,7 @@ const InfoContainer = styled.div`
   background-color: white;
   border-radius: 20px 100px 20px 100px;
 
-  @media (max-width: 1420px) {
+  @media (max-width: 502px) {
     display: none;
   }
 `
@@ -65,12 +65,12 @@ const InfoContainer = styled.div`
 const ToNotDisplayTitle = styled.div`
   display: none;
 
-  @media (max-width: 1420px) {
+  @media (max-width: 502px) {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: ${(props) => props.theme.secondary};
-    height: 100vh;
+    height: 95vh;
     color: ${(props) => props.theme.primary};
     z-index: -2;
     padding-top: 100px;

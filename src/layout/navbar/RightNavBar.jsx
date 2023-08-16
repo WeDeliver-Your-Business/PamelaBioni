@@ -32,7 +32,7 @@ const StyledUl = styled.ul`
     transition: all 0.3s;
     position: relative;
 
-    @media (max-width: 502px) {
+    @media (max-width: 1044px) {
       top: 45px;
       margin-top: 70px;
     }
@@ -53,7 +53,7 @@ const StyledUl = styled.ul`
     width: 100%;
   }
 
-  @media (max-width: 502px) {
+  @media (max-width: 1044px) {
     flex-flow: column;
     background: ${(props) => props.theme.NavBarBackground};
     color: ${(props) => props.theme.ColorWhite};
@@ -72,7 +72,7 @@ const StyledUl = styled.ul`
   }
 
   span {
-    @media (max-width: 502px) {
+    @media (max-width: 1044px) {
       color: ${(props) => props.theme.NavBarBackground};
       margin-top: 20px;
     }

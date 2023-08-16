@@ -19,7 +19,7 @@ const MasterContainer = styled.div`
   display: flex;
   padding-top: 100px;
 
-  @media screen and (max-width: 844px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,12 +33,6 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  /* 
-  @media screen and (min-width: 1024px) {
-    width: 100%;
-    margin-top: -50px;
-    padding-left: 25px;
-  } */
 `
 
 const QuotContainer = styled.div`
@@ -55,18 +49,23 @@ const TextContainer = styled.div`
   gap: 40px;
   padding: 100px;
   margin-top: -70px;
-  /* @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    padding-right: 10px;
-
-    & > h3 {
-      font-size: 36px;
-      line-height: 50px;
-    }
-  } */
+  width: 100%;
 `
 
 const SecondaryContainer = styled.div`
   display: flex;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    /* width: 360px; */
+    margin-top: -160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -75,7 +74,7 @@ const ImageContainer = styled.div`
   margin-top: 50px;
   margin-right: 50px;
 
-  @media (max-width: 502px) {
+  @media (max-width: 1502px) {
     width: 360px;
     margin-left: 15px;
     margin-top: 5px;
@@ -88,6 +87,13 @@ const CRMText = styled.div`
   align-items: end;
   text-align: end;
   margin-left: 165px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
 `
 
 function InfoPage() {

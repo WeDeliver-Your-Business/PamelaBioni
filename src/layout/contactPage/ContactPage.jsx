@@ -169,10 +169,9 @@ const ModalWithAdress = styled.div`
 
 const Footer = styled.div`
   display: flex;
-  width: 1200px;
+  width: 100%;
   justify-content: center;
   text-align: center;
-  margin-left: 400px;
   font-size: 14px;
 
   @media screen and (max-width: 844px) {

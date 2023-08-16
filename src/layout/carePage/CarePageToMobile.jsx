@@ -4,10 +4,9 @@ import { useState } from 'react'
 import { AiFillHeart, AiOutlineHeart, AiOutlinePlusCircle } from 'react-icons/ai'
 import { PiWhatsappLogoThin } from 'react-icons/pi'
 
-import H4 from '../../typograph/H4'
-import H5 from '../../typograph/H5'
-
 import IconImage from '../../utils/iconImage/IconImage'
+import H3 from '../../typograph/H3'
+import H5 from '../../typograph/H5'
 
 const ColouredContainer = styled.div`
   background-color: ${(props) => props.theme.ColorWhite};
@@ -27,6 +26,7 @@ const MainContainer = styled.div`
   background-color: ${(props) => props.theme.primary};
   border-radius: 0px 100px 0px 100px;
 `
+
 const Container = styled.div`
   padding-bottom: 100px;
   justify-content: center;
@@ -169,7 +169,7 @@ function CarePageToMobile() {
       <ColouredContainer>
         <MainContainer>
           <Container>
-            <H4>CUIDADOS</H4>
+            <H3>CUIDADOS</H3>
             <ImageContainer>
               <CardContainer>
                 <IconImage imageName="Care1" type="png" />
