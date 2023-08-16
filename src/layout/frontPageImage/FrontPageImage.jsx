@@ -70,7 +70,7 @@ const ToNotDisplayTitle = styled.div`
     align-items: center;
     flex-direction: column;
     background-color: ${(props) => props.theme.secondary};
-    height: 95vh;
+    height: 97vh;
     color: ${(props) => props.theme.primary};
     z-index: -2;
     padding-top: 100px;

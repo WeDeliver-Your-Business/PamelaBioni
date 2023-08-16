@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import styled from 'styled-components'
 import { useState } from 'react'
 
@@ -84,7 +85,13 @@ const CardIcon = styled.div`
   align-items: center;
   gap: 20px;
   margin-top: 50px;
+
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.secondary};
+  }
 `
+
 const CardHelpContainer = styled.div`
   margin-top: 150px;
   padding-top: 50px;
@@ -94,15 +101,18 @@ const CardHelpContainer = styled.div`
   height: 335px;
   border-radius: 20px 100px 20px 100px;
 `
+
 const TextCardHelp = styled.div`
   display: flex;
   flex-direction: column;
 `
+
 const ImageCardHelp = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px 0 20px 0;
 `
+
 const StyledImageCard = styled.div`
   cursor: pointer;
 
@@ -183,7 +193,9 @@ function CarePageToMobile() {
                     ) : (
                       <AiOutlineHeart size="35px" onClick={handleHeartClick} />
                     )}
-                    <AiOutlinePlusCircle size="35px" />
+                    <a href="/blogPage">
+                      <AiOutlinePlusCircle size="35px" />
+                    </a>
                   </CardIcon>
                 </WhiteBackground>
               </CardContainer>
@@ -199,7 +211,9 @@ function CarePageToMobile() {
                     ) : (
                       <AiOutlineHeart size="35px" onClick={handleSecondHeartClick} />
                     )}
-                    <AiOutlinePlusCircle size="35px" />
+                    <a href="/blogPage">
+                      <AiOutlinePlusCircle size="35px" />
+                    </a>
                   </CardIcon>
                 </WhiteBackground>
               </CardContainer>
@@ -215,7 +229,9 @@ function CarePageToMobile() {
                     ) : (
                       <AiOutlineHeart size="35px" onClick={handleThirdHeartClick} />
                     )}
-                    <AiOutlinePlusCircle size="35px" />
+                    <a href="/blogPage">
+                      <AiOutlinePlusCircle size="35px" />
+                    </a>
                   </CardIcon>
                 </WhiteBackground>
               </CardContainer>
