@@ -26,6 +26,9 @@ const MainContainer = styled.div`
   text-align: center;
   background-color: ${(props) => props.theme.primary};
   border-radius: 0px 100px 0px 100px;
+
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
 `
 
 const Container = styled.div`
@@ -61,13 +64,15 @@ const WhiteBackground = styled.div`
   flex-direction: column;
   background-color: ${(props) => props.theme.ColorWhite};
   width: ${(props) => props.width};
-  height: 340px;
+  height: 350px;
   border-radius: 20px 100px 20px 100px;
   position: absolute;
   z-index: -1;
   cursor: pointer;
   margin-top: 220px;
   transition: transform 1s;
+
+  padding: 10px;
 
   /* :hover {
     transform: translate(0px, 190px);

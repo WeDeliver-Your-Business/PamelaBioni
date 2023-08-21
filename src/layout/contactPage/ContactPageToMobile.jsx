@@ -47,6 +47,8 @@ const CityContainer = styled.div`
     width: 100%;
     display: flex;
     padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 `
 
@@ -61,6 +63,8 @@ const AppointmentPlaces = styled.div`
     width: 100%;
     display: flex;
     padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 `
 
@@ -84,6 +88,8 @@ const SocialMedia = styled.div`
 
     h5 {
       font-size: 18px;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
     }
   }
 `
@@ -117,6 +123,8 @@ const ModalWithAdress = styled.div`
 
   h6 {
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
   }
 
   @media screen and (max-width: 844px) {

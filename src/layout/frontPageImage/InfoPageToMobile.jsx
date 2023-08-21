@@ -35,6 +35,11 @@ const TextContainer = styled.div`
   padding-right: 20px;
   margin-top: -70px;
   width: 100%;
+
+  h5 {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+  }
 `
 
 function InfoPageToMobile() {

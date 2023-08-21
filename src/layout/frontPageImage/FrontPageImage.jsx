@@ -70,7 +70,7 @@ const ToNotDisplayTitle = styled.div`
     align-items: center;
     flex-direction: column;
     background-color: ${(props) => props.theme.secondary};
-    height: 97vh;
+    height: 95vh;
     color: ${(props) => props.theme.primary};
     z-index: -2;
     padding-top: 100px;
@@ -81,6 +81,8 @@ const ToNotDisplayTitle = styled.div`
       display: flex;
       text-align: center;
       line-height: normal;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
     }
   }
 `

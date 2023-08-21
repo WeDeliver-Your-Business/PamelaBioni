@@ -6,6 +6,8 @@ import IconImage from '../../utils/iconImage/IconImage'
 
 const Container = styled.div`
   display: none;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
 
   @media (max-width: 502px) {
     width: 100%;
@@ -45,6 +47,8 @@ const StyledCursorSpan = styled.span`
   color: ${(props) => props.theme.primary};
   font-weight: bold;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
 `
 
 function TopicsAreasToMobile() {

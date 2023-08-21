@@ -10,6 +10,8 @@ const Container = styled.div`
   border-radius: 20px 100px 0px 100px;
   margin-top: -90px;
   background-color: ${(props) => props.theme.ColorWhite};
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
 
   @media screen and (max-width: 844px) {
     width: 100%;
@@ -26,6 +28,11 @@ const Container = styled.div`
 const TextHeaderContainer = styled.div`
   text-align: center;
   padding: 0px 0 30px 0;
+
+  h3 {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+  }
 `
 
 const TextBody = styled.div`
@@ -36,6 +43,8 @@ const TextBody = styled.div`
   h6 {
     padding: 25px 27px 5px 30px;
     line-height: normal;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
   }
 `
 
