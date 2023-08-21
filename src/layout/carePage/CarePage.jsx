@@ -245,7 +245,7 @@ function CarePage() {
           </Container>
           <CardHelpContainer>
             <TextCardHelp>
-              <H5>PRECISANDO DE AJUDA?</H5>
+              <H5>AGENDE SUA CONSULTA</H5>
               <H5>Fale comigo!</H5>
               <ImageCardHelp>
                 <StyledImageCard>
