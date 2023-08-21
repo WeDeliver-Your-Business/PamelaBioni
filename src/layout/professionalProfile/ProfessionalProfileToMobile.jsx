@@ -89,7 +89,7 @@ export default function ProfessionalProfileToMobile() {
           </TextBody>
           <TextBody>
             <H6>
-              Residência média em Ginecologia e Obstetrícia pelo hospital e maternidade Santa
+              Residência médica em Ginecologia e Obstetrícia pelo hospital e maternidade Santa
               Brígida - Curitiba/PR
             </H6>
           </TextBody>

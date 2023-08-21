@@ -107,7 +107,7 @@ export default function ProfessionalProfile() {
           <TextBody>
             <IconImage imageName="PamIcon" type="png" />
             <H5>
-              Residência média em Ginecologia e Obstetrícia pelo hospital e maternidade Santa
+              Residência médica em Ginecologia e Obstetrícia pelo hospital e maternidade Santa
               Brígida - Curitiba/PR
             </H5>
           </TextBody>
