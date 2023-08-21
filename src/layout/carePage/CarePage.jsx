@@ -66,17 +66,17 @@ const WhiteBackground = styled.div`
   flex-direction: column;
   background-color: ${(props) => props.theme.ColorWhite};
   width: ${(props) => props.width};
-  height: 375px;
+  height: 340px;
   border-radius: 20px 100px 20px 100px;
   position: absolute;
   z-index: -1;
   cursor: pointer;
-  margin-top: 70px;
+  margin-top: 220px;
   transition: transform 1s;
 
-  :hover {
+  /* :hover {
     transform: translate(0px, 190px);
-  }
+  } */
 `
 const CardTitle = styled.div`
   justify-content: center;
@@ -84,12 +84,13 @@ const CardTitle = styled.div`
   text-align: center;
   margin-top: 180px;
 `
+
 const CardIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 10px;
 
   a {
     text-decoration: none;
