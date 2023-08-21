@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 import InfoPage from './InfoPage'
 import TopicsAreasToMobile from './TopicsAreasToMobile'
-import H4 from '../../typograph/H4'
-import H5 from '../../typograph/H5'
 
 import IconImage from '../../utils/iconImage/IconImage'
 import ContactPageToMobile from '../contactPage/ContactPageToMobile'
@@ -11,6 +9,8 @@ import InfoPageToMobile from './InfoPageToMobile'
 import ProfessionalProfileToMobile from '../professionalProfile/ProfessionalProfileToMobile'
 import CarePageToMobile from '../carePage/CarePageToMobile'
 import FooterToMobile from '../footer/FooterToMobile'
+
+import H6 from '../../typograph/H6'
 
 const StyledFlex = styled.div`
   position: relative;
@@ -75,8 +75,12 @@ const ToNotDisplayTitle = styled.div`
     z-index: -2;
     padding-top: 100px;
 
-    h4 {
-      font-size: 24px;
+    h6 {
+      padding: 10px;
+      margin-top: 40px;
+      display: flex;
+      text-align: center;
+      line-height: normal;
     }
   }
 `
@@ -112,8 +116,10 @@ function FrontPageImage({ children, image }) {
         <StyledContainer>{children}</StyledContainer>
       </StyledFlex>
       <ToNotDisplayTitle>
-        <H5>Dra. Pâmela Ogassawara Bioni</H5>
-        <H4>Mastologista</H4>
+        <H6>
+          Seja bem-vinda (o) ao meu site, aqui você conhecerá um pouco mais de mim e do meu
+          trabalho.
+        </H6>
         <ImageContainer>
           <IconImage imageName="FirstPhoto" type="png" />
         </ImageContainer>

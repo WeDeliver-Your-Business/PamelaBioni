@@ -125,7 +125,7 @@ function InfoPage() {
             <IconImage imageName="FirstPhoto" type="png" />
             <CRMText>
               <H5>CRM DF 28.981</H5>
-              <H5>RQE 20.062 20.063</H5>
+              <H5>RQE 20.062 / 20.063</H5>
             </CRMText>
           </ImageContainer>
         </SecondaryContainer>
