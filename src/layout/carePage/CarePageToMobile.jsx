@@ -105,6 +105,7 @@ const CardHelpContainer = styled.div`
 const TextCardHelp = styled.div`
   display: flex;
   flex-direction: column;
+  color: ${(props) => props.theme.secondary};
 `
 
 const ImageCardHelp = styled.div`
