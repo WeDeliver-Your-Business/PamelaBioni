@@ -194,6 +194,13 @@ const MainInfoContainer = styled.div`
 function ContactPage() {
   const [showModal, setShowModal] = useState(false);
 
+  const openModal = () => {
+    setShowModal(true);
+    setTimeout(() => {
+      setShowModal(false);
+    }, 20000); // Close the modal after 20 seconds (20000 milliseconds)
+  };
+
   return (
     <>
       <ColouredContainer>
@@ -219,9 +226,10 @@ function ContactPage() {
               <FaHospital size="35px" color="#C39983" />
               <H3>
                 <a
-                  onMouseEnter={() => setShowModal(true)}
-                  onMouseLeave={() => setShowModal(false)}
-                >Locais de atendimento
+                  onMouseEnter={() => openModal()}
+                  // onMouseLeave={() => setShowModal(false)}
+                >
+                  Locais de atendimento
                 </a>
               </H3>
             </AppointmentPlaces>
