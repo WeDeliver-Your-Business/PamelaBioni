@@ -279,6 +279,10 @@ const TextBody = styled.div`
   h6 {
     padding: 25px 27px 5px 30px;
   }
+
+  @media (max-width: 390px) {
+    margin-top: -20px;
+  }
 `
 
 const ImagePostContainer = styled.div`
