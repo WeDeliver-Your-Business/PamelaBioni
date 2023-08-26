@@ -313,7 +313,7 @@ const CareAndContactMainContainer = styled.div`
   }
 
   @media (max-width: 390px) {
-    margin-top: -1000px;
+    margin-top: -800px;
   }
 `
 
