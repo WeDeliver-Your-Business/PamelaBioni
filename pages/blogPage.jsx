@@ -280,7 +280,7 @@ const TextBody = styled.div`
     padding: 25px 27px 5px 30px;
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 502px) {
     margin-top: -20px;
   }
 `
