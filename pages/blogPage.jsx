@@ -52,7 +52,7 @@ const PostModel1 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 130vh;
+  height: 150vh;
   border-radius: 20px 100px 0px 0px;
   margin-bottom: -270px;
 
@@ -265,7 +265,7 @@ const TextPostContainer = styled.div`
   @media (max-width: 502px) {
     display: flex;
     width: 100%;
-    height: 230vh;
+    height: 200vh;
     flex-direction: column;
     padding-left: 0;
     padding: 10px;
@@ -317,7 +317,7 @@ const CareAndContactMainContainer = styled.div`
   }
 
   @media (max-width: 390px) {
-    margin-top: -1000px;
+    margin-top: -900px;
   }
 `
 

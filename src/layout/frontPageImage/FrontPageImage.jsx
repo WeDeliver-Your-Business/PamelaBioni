@@ -107,7 +107,7 @@ const TopicsAreasContainer = styled.div`
   border: none;
   border-radius: 20px 100px 20px 100px;
   width: 100%;
-  margin-top: 93px;
+  margin-top: 92px;
 `
 
 function FrontPageImage({ children, image }) {
