@@ -217,7 +217,7 @@ function CarePageToMobile() {
                     ) : (
                       <AiOutlineHeart size="35px" onClick={handleSecondHeartClick} />
                     )}
-                    <a href="/blogPage">
+                    <a href="/blogPage2">
                       <AiOutlinePlusCircle size="35px" />
                     </a>
                   </CardIcon>
@@ -235,7 +235,7 @@ function CarePageToMobile() {
                     ) : (
                       <AiOutlineHeart size="35px" onClick={handleThirdHeartClick} />
                     )}
-                    <a href="/blogPage">
+                    <a href="/blogPage3">
                       <AiOutlinePlusCircle size="35px" />
                     </a>
                   </CardIcon>
