@@ -49,7 +49,14 @@ const CityContainer = styled.div`
     padding-left: 10px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
+
+    h5 {
+      font-size: 18px;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+    }
 }
+
 `
 
 const AppointmentPlaces = styled.div`
@@ -65,6 +72,12 @@ const AppointmentPlaces = styled.div`
     padding-left: 10px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
+
+    h5 {
+      font-size: 18px;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+    }
 }
 `
 

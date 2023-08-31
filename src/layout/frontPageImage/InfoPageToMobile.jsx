@@ -58,10 +58,10 @@ function InfoPageToMobile() {
             Acredito na medicina baseada em evidências científicas de alta qualidade, proporcionando
             um atendimento personalizado que respeita a individualidade de cada paciente.
           </H5>
-          <H5>
+          {/* <H5>
             Seja bem-vinda (o) ao meu site, aqui você conhecerá um pouco mais de mim e do meu
             trabalho.
-          </H5>
+          </H5> */}
         </TextContainer>
       </MainContainer>
     </>
