@@ -230,6 +230,10 @@ const TextPostContainer = styled.div`
   text-align: center;
   padding: 40px;
 
+  h6 {
+    text-align: justify;
+  }
+
   @media (max-width: 1502px) {
     display: flex;
     width: 100%;
@@ -250,8 +254,10 @@ const TextPostContainer = styled.div`
       padding: 20px;
     }
 
-    h5 {
-      text-align: center;
+    h4 {
+      line-height: normal;
+      font-size: 21px;
+      margin: 10px 0px 10px 0px;
     }
   }
 
@@ -313,7 +319,7 @@ const CareAndContactMainContainer = styled.div`
   }
 
   @media (max-width: 390px) {
-    margin-top: -800px;
+    margin-top: -1100px;
   }
 `
 
@@ -379,9 +385,9 @@ function MainPage() {
               </H4>
               <H6>
                 Podem ser benignos ou malignos. Um nódulo geralmente pode ser percebido através da
-                palpação quando atinge tamanho superior a 1cm. <br></br>As características do nódulo
-                nos exames de imagem vão determinar se ele é provavelmente benigno ou se é suspeito,
-                e associado ao histórico da paciente, será decidida a conduta de acompanhamento ou
+                palpação quando atinge tamanho superior a 1cm. As características do nódulo nos
+                exames de imagem vão determinar se ele é provavelmente benigno ou se é suspeito, e
+                associado ao histórico da paciente, será decidida a conduta de acompanhamento ou
                 realização de biópsia.
               </H6>
               <H6>

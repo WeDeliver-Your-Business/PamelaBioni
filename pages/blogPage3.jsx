@@ -230,6 +230,10 @@ const TextPostContainer = styled.div`
   text-align: center;
   padding: 40px;
 
+  h6 {
+    text-align: justify;
+  }
+
   @media (max-width: 1502px) {
     display: flex;
     width: 100%;
@@ -250,8 +254,10 @@ const TextPostContainer = styled.div`
       padding: 20px;
     }
 
-    h5 {
+    h4 {
       text-align: center;
+      font-size: 21px;
+      line-height: 50px;
     }
   }
 
@@ -317,7 +323,7 @@ const CareAndContactMainContainer = styled.div`
   }
 
   @media (max-width: 390px) {
-    margin-top: -500px;
+    margin-top: -800px;
   }
 `
 

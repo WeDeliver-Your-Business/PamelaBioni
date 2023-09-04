@@ -235,6 +235,7 @@ const TextPostContainer = styled.div`
   padding-left: 100px;
   gap: 10px;
   margin-top: -150px;
+  text-align: justify;
   /* padding: 20px; */
 
   @media (max-width: 1502px) {
@@ -243,7 +244,7 @@ const TextPostContainer = styled.div`
     flex-direction: column;
     padding-top: 100px;
     padding-left: 0;
-    text-align: center;
+    text-align: justify;
     align-items: center;
 
     img {
