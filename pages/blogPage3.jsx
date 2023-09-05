@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 
-import Navbar from '../src/layout/navbar/Navbar'
+// import Navbar from '../src/layout/navbar/Navbar'
+import NavbarToBlogPage from '../src/layout/navbarToBlogPages/NavbarToBlogPage'
 // import WrittenPosts from '../src/layout/writtenPosts/WrittenPosts'
 import CarePage from '../src/layout/carePage/CarePage'
 import ContactPage from '../src/layout/contactPage/ContactPage'
@@ -361,7 +362,7 @@ function MainPage() {
         </LoaderContainer>
       ) : (
         <>
-          <Navbar />
+          <NavbarToBlogPage />
           <PostModel3>
             <TextPostContainer>
               <H1>Quando devo fazer exames de mama?</H1>
@@ -406,10 +407,13 @@ function MainPage() {
               </CardIcon>
             </ImagePostContainer>
           </PostModel3>
-
           <CareAndContactMainContainer>
-            <CarePage />
-            <ContactPage />
+            <div id="careAndBlog">
+              <CarePage />
+            </div>
+            <div id="contactPage">
+              <ContactPage />
+            </div>
           </CareAndContactMainContainer>
           <ToDisplayOnMobileOnly>
             <CarePageToMobile />

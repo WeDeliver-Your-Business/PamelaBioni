@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 
-import Navbar from '../src/layout/navbar/Navbar'
+// import Navbar from '../src/layout/navbar/Navbar'
+import NavbarToBlogPage from '../src/layout/navbarToBlogPages/NavbarToBlogPage'
 // import WrittenPosts from '../src/layout/writtenPosts/WrittenPosts'
 import CarePage from '../src/layout/carePage/CarePage'
 import CarePageToMobile from '../src/layout/carePage/CarePageToMobile'
@@ -357,7 +358,7 @@ function MainPage() {
         </LoaderContainer>
       ) : (
         <>
-          <Navbar />
+          <NavbarToBlogPage />
           <PostModel2>
             <ImagePostContainer>
               <IconImage imageName="Care2" type="png" />
@@ -397,8 +398,12 @@ function MainPage() {
             </TextPostContainer>
           </PostModel2>
           <CareAndContactMainContainer>
-            <CarePage />
-            <ContactPage />
+            <div id="careAndBlog">
+              <CarePage />
+            </div>
+            <div id="contactPage">
+              <ContactPage />
+            </div>
           </CareAndContactMainContainer>
           <ToDisplayOnMobileOnly>
             <CarePageToMobile />

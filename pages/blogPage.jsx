@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 
-import Navbar from '../src/layout/navbar/Navbar'
+// import NavbarToBlogPage from '../src/layout/navbarToBlogPages/NavbarToBlogPage'
 // import WrittenPosts from '../src/layout/writtenPosts/WrittenPosts'
+// import ResponsiveNavBarToBlog from '../src/layout/responsiveNavBar/ResponsiveNavBarToBlog'
+import NavbarToBlogPage from '../src/layout/navbarToBlogPages/NavbarToBlogPage'
 import CarePage from '../src/layout/carePage/CarePage'
 import ContactPage from '../src/layout/contactPage/ContactPage'
 import CarePageToMobile from '../src/layout/carePage/CarePageToMobile'
@@ -341,6 +343,12 @@ const ToDisplayOnMobileOnly = styled.div`
   }
 `
 
+// const NavBarToNotDisplayOnMobile = styled.div`
+//   @media (max-width: 1044px) {
+//     display: none;
+//   }
+// `
+
 function MainPage() {
   const [loading, setLoading] = useState(true)
   const [isFilled, setIsFilled] = useState(false)
@@ -374,7 +382,12 @@ function MainPage() {
         </LoaderContainer>
       ) : (
         <>
-          <Navbar />
+          {/* Esse é o NAVBAR para o blog page normal */}
+          {/* <NavBarToNotDisplayOnMobile> */}
+          <NavbarToBlogPage />
+          {/* </NavBarToNotDisplayOnMobile> */}
+          {/* Esse é o NAVBAR para o blog page responsivo */}
+          {/* <ResponsiveNavBarToBlog /> */}
           <PostModel1>
             <TextPostContainer>
               <H1>Quando procurar um mastologista?</H1>
@@ -517,8 +530,12 @@ function MainPage() {
             </PostModel3>
           </div> */}
           <CareAndContactMainContainer>
-            <CarePage />
-            <ContactPage />
+            <div id="careAndBlog">
+              <CarePage />
+            </div>
+            <div id="contactPage">
+              <ContactPage />
+            </div>
           </CareAndContactMainContainer>
           <ToDisplayOnMobileOnly>
             <CarePageToMobile />
