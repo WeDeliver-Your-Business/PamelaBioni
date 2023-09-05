@@ -79,12 +79,9 @@ const StyledUl = styled.ul`
   }
 `
 
-const RightNavBar = ({ open }) => {
+const RightNavBarToMobile = ({ open }) => {
   const router = useRouter()
-  const handleClickToNewProduct = () => {
-    !open
-    router.push('/')
-  }
+
   const handleClicktoMyAdds = () => {
     !open
     router.push('/')
@@ -100,32 +97,22 @@ const RightNavBar = ({ open }) => {
         <IconImage imageName="LogotipoNavbar" type="png" size="308px" height="100px" />
       </StyledLogo>
       <StyledUl open={open}>
-        <li onClick={handleClicktoMyAdds}>
-          <Link to="introText" smooth={true} offset={700} duration={800}>
-            Dra. Pâmela Bioni
-          </Link>
-        </li>
-        <span> | </span>
-        <li onClick={handleClickToNewProduct}>
-          <Link to="professionalProfile" smooth={true} offset={-120} duration={800}>
-            Perfil profissional
-          </Link>
-        </li>
+        <li onClick={handleClicktoMyAdds}>Dra. Pâmela Bioni</li>
         <span> | </span>
         <li onClick={handleClicktoMyAdds}>
-          <Link to="topicAreas" smooth={true} offset={420} duration={800}>
+          <Link to="careAndBlog" smooth={true} offset={-100} duration={800}>
             Cuidados
           </Link>
         </li>
         <span> | </span>
         <li onClick={handleClickToReports}>
-          <Link to="carePage" smooth={true} offset={670} duration={800}>
+          <Link to="careAndBlog" smooth={true} offset={670} duration={800}>
             Saiba mais
           </Link>
         </li>
         <span> | </span>
         <li onClick={handleClickToReports}>
-          <Link to="contactPage" smooth={true} offset={170} duration={800}>
+          <Link to="contactPage" smooth={true} offset={1870} duration={800}>
             Contatos
           </Link>
         </li>
@@ -134,4 +121,4 @@ const RightNavBar = ({ open }) => {
   )
 }
 
-export default RightNavBar
+export default RightNavBarToMobile
