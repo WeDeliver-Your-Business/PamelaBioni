@@ -91,7 +91,7 @@ const SocialMedia = styled.div`
 
   a { 
     text-decoration: none;
-    color: ${(props) => props.theme.secondary};
+    color: ${(props) => props.theme.primary};
   }
 
   @media screen and (max-width: 844px) {
@@ -133,6 +133,14 @@ const ModalWithAdress = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   z-index: 999;
+
+  h5 {
+      font-size: 21px;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      margin-bottom: -40px;
+      line-height: normal;
+    }
 
   h6 {
     font-size: 16px;
@@ -203,13 +211,16 @@ function ContactPageToMobile() {
             {showModal && (
                 <ModalWithAdress>
                   <H5>Hospital Sírio-Libanês - Brasília - DF</H5>
-                  <h6>SGAS 613, s/n Lote 94, Asa Sul - (61) 99955-4558 / (61) 3044-8888 </h6>
+                  <h6>SGAS 613, s/n Lote 94, Asa Sul <br></br> (61) 99955-4558 / (61) 3044-8888 </h6>
+                  <br></br>
+                  <H5>Hospital Sírio-Libanês - Unidade Águas Claras</H5>
+                  <h6>Rua Copaíba, 01, Shopping DF Century Plaza | Torre B 21º <br></br> (61) 3044-8888 </h6>
                   <br></br>
                   <H5>Clínica Unitá</H5>
-                  <h6>SHJB III E/Q 3/5, Avenida das Paineiras,  Bloco A, 1º andar - Edifício Jardim Imperial - (61) 99267-0123 </h6>
+                  <h6>Centro Clínico Sul, TORRE I Sala 222 e 224 <br></br> (61) 99267-0123 </h6>
                   <br></br>
                   <H5>Clínica Mama - Asa Norte</H5>
-                  <h6>SEPN 516, Bloco E, Edifício Carlton Center 1º andar - (61) 3213-6625 </h6>
+                  <h6>SEPN 516, Bloco E, Edifício Carlton Center 1º andar <br></br> (61) 3213-6625 </h6>
                 </ModalWithAdress>
               )}
           </ModalContainer>

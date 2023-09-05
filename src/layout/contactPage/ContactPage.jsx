@@ -260,8 +260,11 @@ function ContactPage() {
                   <H5>Hospital Sírio-Libanês - Brasília - DF</H5>
                   <h6>SGAS 613, s/n Lote 94, Asa Sul - (61) 99955-4558 / (61) 3044-8888 </h6>
                   <br></br>
+                  <H5>Hospital Sírio-Libanês - Unidade Águas Claras</H5>
+                  <h6>Rua Copaíba, 01, Shopping DF Century Plaza | Torre B 21º - (61) 3044-8888 </h6>
+                  <br></br>
                   <H5>Clínica Unitá</H5>
-                  <h6>SHJB III E/Q 3/5, Avenida das Paineiras,  Bloco A, 1º andar - Edifício Jardim Imperial - (61) 99267-0123 </h6>
+                  <h6>Centro Clínico Sul, TORRE I Sala 222 e 224 - (61) 99267-0123 </h6>
                   <br></br>
                   <H5>Clínica Mama - Asa Norte</H5>
                   <h6>SEPN 516, Bloco E, Edifício Carlton Center 1º andar - (61) 3213-6625 </h6>
