@@ -249,11 +249,7 @@ function CarePage() {
               <H5>Fale comigo!</H5>
               <ImageCardHelp>
                 <StyledImageCard>
-                  <a
-                    href="https://web.whatsapp.com/send?phone=556192392319"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://wa.me/556192392319" target="_blank" rel="noreferrer">
                     <PiWhatsappLogoThin size="70px" />
                   </a>
                 </StyledImageCard>
