@@ -227,7 +227,7 @@ const TextPostContainer = styled.div`
   width: 100%;
   /* padding-left: 100px; */
   gap: 10px;
-  margin-top: -150px;
+  margin-top: 10px;
   text-align: center;
   padding: 40px;
 
@@ -269,6 +269,7 @@ const TextPostContainer = styled.div`
     flex-direction: column;
     padding-left: 0;
     padding: 10px;
+    margin-top: -100px;
   }
 `
 
@@ -297,12 +298,14 @@ const CardIcon = styled.div`
 
   cursor: pointer;
 
-  @media screen and (max-width: 1044px) {
+  @media screen and (max-width: 1644px) {
     display: none;
   }
 `
 
 const CareAndContactMainContainer = styled.div`
+  margin-top: 300px;
+
   @media (max-width: 1602px) {
     margin-top: -300px;
   }

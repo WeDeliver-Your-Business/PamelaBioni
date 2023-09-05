@@ -227,7 +227,7 @@ const TextPostContainer = styled.div`
   width: 100%;
   /* padding-left: 100px; */
   gap: 10px;
-  margin-top: -150px;
+  margin-top: -100px;
   text-align: center;
   padding: 40px;
 
@@ -279,7 +279,6 @@ const ImagePostContainer = styled.div`
   justify-content: center;
 
   margin-left: 150px;
-  margin-right: 150px;
 
   @media screen and (max-width: 844px) {
     margin-left: 0;
@@ -297,12 +296,14 @@ const CardIcon = styled.div`
 
   cursor: pointer;
 
-  @media screen and (max-width: 1044px) {
+  @media screen and (max-width: 1644px) {
     display: none;
   }
 `
 
 const CareAndContactMainContainer = styled.div`
+  margin-top: 200px;
+
   @media (max-width: 1602px) {
     margin-top: -300px;
   }
