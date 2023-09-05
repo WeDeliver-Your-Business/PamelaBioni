@@ -250,7 +250,7 @@ function CarePage() {
               <ImageCardHelp>
                 <StyledImageCard>
                   <a
-                    href="https://wa.me//5561992392319?text=Olá%20Dra.%20Pâmela"
+                    href="https://wa.me/556192392319?text=Olá%20Dra.%20Pâmela"
                     target="_blank"
                     rel="noreferrer"
                   >
