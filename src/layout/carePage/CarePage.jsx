@@ -250,7 +250,7 @@ function CarePage() {
               <ImageCardHelp>
                 <StyledImageCard>
                   <a
-                    href="https://api.whatsapp.com/send?phone=5577912345678&text=Entrar%20em%20contato"
+                    href="https://api.whatsapp.com/send?phone=556192392319&text=Olá,%20Dra.%Pâmela"
                     target="_blank"
                     rel="noreferrer"
                   >
